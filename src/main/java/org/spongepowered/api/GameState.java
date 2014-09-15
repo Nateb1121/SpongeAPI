@@ -45,7 +45,7 @@ public enum GameState {
     PRE_INITIALIZATION,
     
     /**
-     * The state where the Game is initializing the World, Entitys,
+     * The state where the Game is initializing the World, Entities,
      * Game Play Mechanics and Plugins. 
      */
     INITIALIZATION,
