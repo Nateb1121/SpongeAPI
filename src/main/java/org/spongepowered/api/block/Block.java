@@ -26,7 +26,7 @@
 package org.spongepowered.api.block;
 
 /**
- * Describes a voxel. Child classes define specific functionality.
+ * Describes a Block. Child classes define specific functionality.
  */
 public interface Block {
 

@@ -25,17 +25,61 @@
 package org.spongepowered.api;
 
 /**
- * Top to bottom order of the lifecycle.
+ * Top to bottom order of the life cycle.
  */
 public enum GameState {
+    
+    /**
+     * The state where the Game is still loading and constructing the world. 
+     */
     CONSTRUCTION,
+    
+    /**
+     * The state where the Game has completed loading world data. 
+     */ 
     LOAD_COMPLETE,
+    
+    /**
+     * The state where the Game is waiting for the initialization process to begin. 
+     */
     PRE_INITIALIZATION,
+    
+    /**
+     * The state where the Game is initializing the World, Entitys,
+     * Game Play Mechanics and Plugins. 
+     */
     INITIALIZATION,
+    
+    /**
+     * The state where the Game is finished initializing but not yet started. 
+     */ 
     POST_INITIALIZATION,
+    
+    /**
+     * The state where the Game is waiting for anything still needed in order
+     * to start. 
+     */ 
     SERVER_ABOUT_TO_START,
+    
+    /**
+     * The state where the Game is in the process of beginning to start. 
+     */ 
     SERVER_STARTING,
+    
+    /**
+     * The state where the Game has started and will now accept incoming connections
+     */ 
     SERVER_STARTED,
+    
+    /**
+     * The state where the Game is stopping and disconnecting Players, saving worlds 
+     * and disconnecting players. 
+     */ 
     SERVER_STOPPING,
+    
+    /**
+     * The state where the Game is fully stopped where no worlds are loaded, Players and all 
+     * files are saved. 
+     */ 
     SERVER_STOPPED
 }
