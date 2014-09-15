@@ -26,7 +26,7 @@
 package org.spongepowered.api.entity;
 
 import java.util.UUID;
-import org.spongepowered.api.world.Voxel; 
+import org.spongepowered.api.math.Vector3d;
 
 public interface Entity {
 
@@ -38,10 +38,10 @@ public interface Entity {
     UUID getUniqueID();
     
     /**
-     * Gets the Voxel for this entity
+     * Gets the Vector3d for this entity
      * 
-     * @return The entity's {@link Voxel}
+     * @return The entity's {@link Vector3d}
      */
-     Voxel getVoxel();
+     Vector3d getVector3d();
      
 }
